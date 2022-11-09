@@ -1,0 +1,2 @@
+npm run build
+echo '4!f4nSuD!n' | scp -r ./build/* medicalanalytics@medicalanalytics.org:/home/medicalanalytics/nginx_react/doctor 
