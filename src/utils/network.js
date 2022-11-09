@@ -1,7 +1,7 @@
 import { hideSpinner, showSpinner } from "./context"
 
-const SERVERPORT = "5555" // port 5555 = patient, 5556 = doctor's server
-export const SERVER = "https://www.medicalanalytics.org:" + SERVERPORT
+const SERVERPORT = process.env.REACT_APP_SERVER_PORT
+export const SERVER = process.env.REACT_APP_SERVER + SERVERPORT
 
 // * --------------------------------------------------------------------------------------------------
 // * -------------------------------------- Main Send Module ------------------------------------------
