@@ -1,6 +1,24 @@
+/**
+ * Main entry point
+ * 
+ * This file renders either a <Main/> or <LandingPage/>, depending on login status
+ * 
+ * <LandingPage/> will perform these functions through the onLogin prop sent to it's child <LoginBox/> component:
+ *	- createSocket()
+ *	- login() 					  - add socket details to Context state
+ *	- common_loadGlobalSettings() - updates the Context state
+ * 
+ * It loads 3 components that will be used universally throughout application, which will be rendered depending
+ * on the Context state status of the component 
+ *  	- <Snackbar/>
+ *  	- <Spinner/>
+ *  	- <Message/> - loaded through a <ModalScreen/> component
+ * 
+ */
+
 // TODO --------------- <LandingPage/>
 // TODO - add sessiontokens
-// TODO - encrypt data
+// TODO - encrypt login data
 
 import { createContext, useReducer } from "react"
 import "./App.css"

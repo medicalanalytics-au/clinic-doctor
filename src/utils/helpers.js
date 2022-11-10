@@ -50,7 +50,7 @@ export const useResponsiveMedia = () => {
 		const largerDim = width > height ? width : height
 
 		const type = smallerDim < 768 ? "mobile" : largerDim > 1366 ? "desktop" : smallerDim < 1024 ? "tablet" : largerDim === 1366 ? "tablet" : "desktop"
-s
+
 		setMedia({
 			width,
 			height,

@@ -52,6 +52,11 @@ import ConsultationDuration from "./ConsultationDuration"
 // network
 import { doctor_setOnlineAppointment, doctor_startAppointmentNow } from "../utils/network"
 
+const STUN_URL = process.env.REACT_APP_STUN_URL
+const TURN_URL = process.env.REACT_APP_TURN_URL
+const TURN_USERNAME = process.env.REACT_APP_TURN_USERNAME
+const TURN_CREDENTIAL = process.env.REACT_APP_TURN_CREDENTIAL
+
 const Main = (props) => {
 	const { state, dispatch } = useContext(ProfileContext)
 
@@ -69,7 +74,7 @@ const Main = (props) => {
 		consultation,
 	} = state
 
-	const { doctor_appointment_id, } = consultation
+	const { doctor_appointment_id } = consultation
 	const { activeDialog } = dialogs
 
 	const [selectEndTimeOpen, setSelectEndTimeOpen] = useState(false)
@@ -162,24 +167,14 @@ const Main = (props) => {
 					trickle: false,
 					stream: _stream.current,
 					config: {
-						/* iceServers: [
-							{
-								urls: "stun:stun.medicalanalytics.org:5349",
-							},
-							{
-								urls: "turn:turn.medicalanalytics.org:5349",
-								username: "medicalanalytics",
-								credential: "medicalanalytics",
-							},
-						], */
 						iceServers: [
 							{
-								urls: "stun:stun.voxiemusic.com:5349",
+								urls: STUN_URL,
 							},
 							{
-								urls: "turn:turn.voxiemusic.com:5349",
-								username: "voxiepublic",
-								credential: "voxiepublic",
+								urls: TURN_URL,
+								username: TURN_USERNAME,
+								credential: TURN_CREDENTIAL,
 							},
 						],
 					},

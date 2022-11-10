@@ -1,6 +1,6 @@
-// * ******************************************************************************************************************* * //
-// *     this component is used for selecting the End Time for the automatic "Start Clinic" option from main dashboard   * //
-// * ******************************************************************************************************************* * //
+/**
+ * this component is used for selecting the End Time for the automatic "Start Clinic" option from main dashboard
+ */
 
 import { useCallback, useContext, useEffect, useRef, useState } from "react"
 import "../App.css"
@@ -23,17 +23,7 @@ import { GenericError } from "../utils/sweetalertDialogs"
 import { formatDate, getDuration, now } from "../utils/helpers"
 
 // constants
-import {
-	APPOINTMENT_TYPE,
-	BLACK,
-	HOUR_1,
-	HOUR_12,
-	MAINCOLOR,
-	MIN_1,
-	MIN_14,
-	MIN_5,
-	RED,
-} from "../utils/constants"
+import { APPOINTMENT_TYPE, BLACK, HOUR_1, HOUR_12, MAINCOLOR, MIN_1, MIN_14, MIN_5, RED } from "../utils/constants"
 
 const ConsultationDuration = (props) => {
 	const { state, dispatch } = useContext(ProfileContext)
@@ -118,7 +108,7 @@ const ConsultationDuration = (props) => {
 
 	return (
 		<div style={styles.mainContainer}>
-			<div className="timeboxContainer" style={styles.timeBoxContainer}>
+			<div className="timeboxContainer">
 				<LocalizationProvider dateAdapter={DateAdapter}>
 					<MobileTimePicker
 						label="Select End Time"
@@ -222,23 +212,6 @@ const styles = {
 		alignItems: "center",
 		color: BLACK,
 		justifyContent: "space-between",
-	},
-	timeBoxContainer: {
-		/* ...center,
-		flexDirection: "column",
-		height: "100%",
-		width: "80%",
-		margin: "10px",
-		justifyContent: "center",
-		//		padding: "20px",
-		 borderRadius: "5px",
-		boxShadow: "inset -1px -1px 6px " + MAINCOLOR_LIGHT, 
-		background: "rgba( 255, 255, 255, 0.25 )",
-boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-backdrop
-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 	},
 	calculatedEndTime: {
 		marginTop: "10px",
