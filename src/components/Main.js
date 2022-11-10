@@ -10,10 +10,10 @@
  * ===========
  * Declaring it here will allow these components to be rendered independent of which screen is currently active.
  *
- * Swal 		  - a Sweetalert2 component for dialogs
- * 				  - this Sweetalert2-defined method fire() takes a dialog as a parameter
- *				  - a helper function addDialog() in Context is used to add to an array of dialogs, which is called on render() to check for 
- *      		  - the next active dialog in this component <Main/> useEffect() hook
+ * Swal 	- a Sweetalert2 component for dialogs
+ * 			- this Sweetalert2-defined method fire() takes a dialog as a parameter
+ *			- a helper function addDialog() in Context is used to add to an array of dialogs, which is called on render() to check for 
+ *      	- the next active dialog in this component <Main/> useEffect() hook
  * 
  * <VideoScreen/> - main video consultation screen. 
  * <ConsultationSummary />
