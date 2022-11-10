@@ -21,11 +21,11 @@ ensure consistency. Both frontend interfaces are written in ReactJs, and hosted 
 pages for both apps individually.
 
 #### Backend
-Backend is hosted on an Ubuntu server running NGINX proxy/webserver on TLS.
+Backend is hosted on an Ubuntu server running NGINX proxy/webserver with TLS.
 
-All requests are directed to a NodeJs/Express application, with MongoDB/Mongoose as the database delivery system.
+All requests are directed to a NodeJs/Express application, with MongoDB/Mongoose as the database.
 
-Communication between client to host utilises a native fetch() for CRUD operations, and Socket.io for messaging and notifications.
+Communication between client to host utilises a XHR fetch() for CRUD operations, and Socket.io for messaging and notifications.
 
 Video handshakes are conducted through a PeerJs module, which negotiates ICE candidates with a COTURN turnserver. Video transmission is conducted 
 through a WebRTC module.
