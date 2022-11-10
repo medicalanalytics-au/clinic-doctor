@@ -1,3 +1,30 @@
+/**
+ * * Main page
+ * * This page will be rendered on successful login
+ *
+ * Program description:
+ *
+ * As this is the main page upon login, several components are declared here, which would be available application wide
+ *  			     
+ * Components:
+ * ===========
+ * Declaring it here will allow these components to be rendered independent of which screen is currently active.
+ *
+ * Swal 		  - a Sweetalert2 component for dialogs
+ * 				  - this Sweetalert2-defined method fire() takes a dialog as a parameter
+ *				  - a helper function addDialog() in Context is used to add to an array of dialogs, which is called on render() to check for 
+ *      		  - the next active dialog in this component <Main/> useEffect() hook
+ * 
+ * <VideoScreen/> - main video consultation screen. 
+ * <ConsultationSummary />
+ * <ConsultationDetails />
+ * 
+ * PeerJs is initialized here, with peer and socket signals for video initialization is handled here
+ * Peer server will take in an ICE candidate as a config param. Credentials is loaded from environment variables.
+ * 
+ * A <BottomNavigation/> component for active page selection is rendered at the bottom of the screen
+ */
+
 import { useContext, useEffect, useState, useCallback, useRef } from "react"
 import "../App.css"
 import PropTypes from "prop-types"
@@ -90,7 +117,7 @@ const Main = (props) => {
 	const closeConsultationDetails = () => setShowConsultationDetails(dispatch, { show: false, id: "" }) // id = appointment id
 
 	// ! ************************************************************ Initialization ************************************************************ //
-	// * download messages on load of Main page
+	// * download messages on load of Main page - implementation hidden
 
 	/* useEffect(() => {
 		downloadMessages(dispatch, state._id)
@@ -400,7 +427,7 @@ const styles = {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		position: "relative", //
+		position: "relative",
 	},
 	body: {
 		display: "flex",

@@ -214,7 +214,7 @@ const ManageDoctors = () => {
 		},
 		doctorDetails: {
 			...supportStyles.doctorDetails,
-			height: mobile(media) ? "80%" : "100%", ///
+			height: mobile(media) ? "80%" : "100%", 
 			flexDirection: portrait(media) ? "column-reverse" : "row",
 		},
 		rightPanel: {
@@ -382,12 +382,12 @@ const ManageDoctors = () => {
 const supportStyles = {
 	mainContainer: {
 		display: "flex",
-		color: MAINCOLOR, ///
+		color: MAINCOLOR, 
 		height: "100%",
 	},
 	noDoctorSelectedBox: {
 		...center,
-		height: "100%", ///
+		height: "100%", 
 		boxShadow: "0px 0px 5px " + MAINCOLOR,
 		borderRadius: "5px",
 		fontWeight: "bold",
@@ -416,12 +416,12 @@ const subStyles = {
 	},
 	leftPanelUnscrollableInnerContainer: {
 		height: "400px",
-		overflow: "hidden", ///
+		overflow: "hidden", 
 	},
 	centerPanel: {
 		height: "100%",
 		flex: 1,
-		border: "1px solid silver", ///
+		border: "1px solid silver", 
 		borderRadius: "5px",
 		boxShadow: "0px 0px 5px " + MAINCOLOR,
 		display: "flex",
@@ -431,12 +431,12 @@ const subStyles = {
 	centerPanelBody: {
 		margin: "10px",
 		display: "flex",
-		flexDirection: "column", ///
+		flexDirection: "column", 
 	},
 	titleContainer: {
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-between", ///
+		justifyContent: "space-between", 
 	},
 	doctorListBox: {
 		height: "100%",
@@ -444,7 +444,7 @@ const subStyles = {
 	},
 	addDoctorButton: {
 		marginTop: "10px",
-		width: "200px", ///
+		width: "200px", 
 		marginBottom: "10px",
 	},
 	setActiveContainer: {
@@ -457,7 +457,7 @@ const subStyles = {
 		flexDirection: "row",
 		justifyContent: "center",
 		marginBottom: "10px",
-		width: "100%", ///
+		width: "100%", 
 	},
 }
 

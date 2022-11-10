@@ -2,7 +2,7 @@ import { useContext, useState } from "react"
 import "../../../App.css"
 import PropTypes from "prop-types"
 
-/// material ui
+ material ui
 import { Badge, Button, ClickAwayListener, Divider, List, ListItem, ListItemButton } from "@mui/material"
 
 // react icons

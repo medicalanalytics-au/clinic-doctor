@@ -140,7 +140,7 @@ const styles = {
 		border: "1px solid silver",
 		borderRadius: "5px",
 		padding: "10px",
-		height: "95%", ///
+		height: "95%", 
 	},
 	noInfo: {
 		height: "100%",
@@ -152,11 +152,11 @@ const styles = {
 		display: "flex",
 		...center,
 		height: "100%",
-		position: "relative", ///
+		position: "relative", 
 	},
 	image: {
 		position: "absolute",
-		top: 0, ///
+		top: 0, 
 	},
 }
 

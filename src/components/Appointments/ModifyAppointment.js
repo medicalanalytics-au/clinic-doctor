@@ -131,23 +131,23 @@ const styles = {
 		display: "flex",
 		justifyContent: "center",
 		alignItems: "center",
-		flexDirection: "column", ///
+		flexDirection: "column", 
 	},
 	duration: {
 		marginTop: "20px",
 		display: "flex",
-		flexDirection: "row", ///
+		flexDirection: "row", 
 	},
 	durationLabel: {
 		fontWeight: "bold",
-		marginRight: "20px", ///
+		marginRight: "20px", 
 	},
 	saveButtonContainer: {
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "center",
 		marginRight: "10px",
-		marginBottom: "50px", ///
+		marginBottom: "50px", 
 	},
 }
 export default ModifyAppointment

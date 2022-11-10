@@ -80,7 +80,7 @@ const styles = {
 	menuIcon: {
 		position: "absolute",
 		right: "10px",
-		cursor: "pointer", ///
+		cursor: "pointer", 
 		fontSize: "20px",
 		...center,
 	},

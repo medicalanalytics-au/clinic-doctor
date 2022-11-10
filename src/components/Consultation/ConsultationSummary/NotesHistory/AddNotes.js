@@ -214,7 +214,7 @@ const styles = {
 		borderRadius: "5px",
 		height: "100%",
 		overflow: "hidden",
-		padding: "5px", ///
+		padding: "5px", 
 	},
 }
 

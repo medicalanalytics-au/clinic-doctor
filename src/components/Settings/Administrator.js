@@ -107,11 +107,11 @@ const styles = {
 	mainContainer: {
 		display: "flex",
 		flexDirection: "column",
-		color: MAINCOLOR, ///
+		color: MAINCOLOR, 
 	},
 	textfieldWidth: {
 		marginBottom: "10px",
-		width: "300px", ///
+		width: "300px", 
 	},
 }
 

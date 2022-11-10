@@ -109,14 +109,14 @@ const styles = {
 	body: {
 		width: "100%",
 		height: "400px",
-		overflow: "hidden", ///
+		overflow: "hidden", 
 	},
 	header: {
 		padding: "10px",
 		...center,
 		fontWeight: "bold",
 		color: WHITE,
-		backgroundColor: MAINCOLOR_LIGHT, ///
+		backgroundColor: MAINCOLOR_LIGHT, 
 	},
 }
 export default Qualifications

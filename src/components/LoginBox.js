@@ -1,3 +1,9 @@
+/**
+ * App -> LandingPage -> LoginBox
+ * 
+ * LoginBox will return through onLogin props upon successful login
+ */
+
 import { useContext, useState } from "react"
 import "../App.css"
 import PropTypes from "prop-types"
@@ -112,7 +118,7 @@ const subStyles = {
 	caption: {
 		fontSize: "12px",
 		marginTop: "5px",
-		marginBottom: "10px", ///
+		marginBottom: "10px", 
 	},
 	helperText: {
 		fontSize: "10px",
@@ -129,7 +135,7 @@ const subStyles = {
 		flexDirection: "row",
 	},
 	iconSize: {
-		fontSize: "15px", ///
+		fontSize: "15px", 
 	},
 }
 

@@ -54,7 +54,7 @@ const AppointmentDetails = (props) => {
 			width: isMobilePortrait ? "100%" : "50%",
 		},
 		timeBox: {
-			///
+			
 			...supportStyles.timeBox,
 			width: isMobilePortrait ? "100%" : "50%",
 		},
@@ -242,11 +242,11 @@ const subStyles = {
 	},
 	pendingPaymentStatus: {
 		fontWeight: "bold",
-		color: "red", ///
+		color: "red", 
 	},
 	sessionStatus: {
 		fontWeight: "bold",
-		color: MAINCOLOR, ///
+		color: MAINCOLOR, 
 		justifyContent: "flex-end",
 		alignItems: "flex-end",
 	},
@@ -256,11 +256,11 @@ const supportStyles = {
 	infoContainer: {
 		display: "flex",
 		width: "80%",
-		...center, ///
+		...center, 
 	},
 	infoBox: {
 		display: "flex",
-		flexDirection: "column", ///
+		flexDirection: "column", 
 	},
 	info: {
 		appointmentStatus: {

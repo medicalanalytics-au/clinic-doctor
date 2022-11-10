@@ -113,7 +113,7 @@ const styles = {
 	},
 	logo: {
 		height: "45px",
-		marginLeft: "50px", ///
+		marginLeft: "50px", 
 	},
 }
 export default LandingPage

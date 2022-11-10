@@ -79,7 +79,7 @@ const supportStyles = {
 	},
 	spinnerContainer: {
 		...center,
-		display: "flex", ///
+		display: "flex", 
 	},
 }
 export default Spinner

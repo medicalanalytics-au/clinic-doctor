@@ -78,7 +78,7 @@ const styles = {
 		position: "absolute",
 		bottom: "10px",
 		width: "100%",
-		zIndex: 10000, ///
+		zIndex: 10000, 
 	},
 }
 export default ModalScreen

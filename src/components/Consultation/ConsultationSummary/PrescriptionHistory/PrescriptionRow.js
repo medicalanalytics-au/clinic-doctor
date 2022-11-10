@@ -189,7 +189,7 @@ const styles = {
 		marginLeft: "20px",
 		marginRight: "20px",
 		cursor: "pointer",
-		height: "100%", ///
+		height: "100%", 
 	},
 }
 

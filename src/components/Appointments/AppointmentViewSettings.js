@@ -85,12 +85,12 @@ const styles = {
 		display: "flex",
 		flexDirection: "column",
 		padding: "20px",
-		justifyContent: "space-between", ///
+		justifyContent: "space-between", 
 	},
 	body: {
 		height: "100%",
 		display: "flex",
-		flexDirection: "column", ///
+		flexDirection: "column", 
 	},
 	buttonContainer: center,
 }
