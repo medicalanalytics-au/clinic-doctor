@@ -2,6 +2,8 @@ Author: Zulkarnain Shariff
 
 # Doctor's portal for clinic usage
 
+## This project is written in ReactJS
+
 ## Project Overview
 
 ### History
